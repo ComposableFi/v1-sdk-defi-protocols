@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@composable-finance/sdk-defi-protocols": "^1.0.3"
+  }
+}
