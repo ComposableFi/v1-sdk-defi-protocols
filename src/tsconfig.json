@@ -1,0 +1,24 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "compilerOptions": {
+        "declaration": true,
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "outDir": "./dist"
+    },
+    "include": [
+        "./**/*.ts",
+        "./package.json"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./dist",
+        "./test",
+        "./scripts"
+    ],
+    "files": []
+}
