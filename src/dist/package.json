@@ -1,5 +1,5 @@
 {
-    "name": "@composable-finance/sdk-defi-protocols",
+    "name": "@composable-finance/v1-sdk-defi-protocols",
     "version": "1.0.4",
     "description": "Provides ABIs, Addresses, and Solidity Interfaces to popular DeFi protocols.",
     "main": "dist/src/index.js",
@@ -8,9 +8,9 @@
         "clean": "rm -rf dist",
         "build": "yarn clean && tsc --declaration && cp ../README.md dist",
         "postbuild": "copyfiles --verbose -u 2 ./**/interfaces/*.sol -e './node_modules/**/*.*' ./dist/contracts/",
-        "pack:move": "cd ./dist && yarn pack && mv composable-finance-sdk-defi-protocols-v1.0.4.tgz ../../dist_packages",
+        "pack:move": "cd ./dist && yarn pack && mv composable-finance-v1-sdk-defi-protocols-v1.0.4.tgz ../../dist_packages",
         "build:pack:move": "yarn build && yarn run pack:move",
-        "build:pack:move:install": "yarn run build:pack:move && cd ../../dist_packages && yarn add ./dist_packages/composable-finance-sdk-defi-protocols-v1.0.4-alpha.tgz",
+        "build:pack:move:install": "yarn run build:pack:move && cd ../../dist_packages && yarn add ./dist_packages/composable-finance-v1-sdk-defi-protocols-v1.0.4-alpha.tgz",
         "test": "jest --verbose",
         "link": "yarn build && cd dist && npm link",
         "pubdist": "cd dist && npm publish --ignore-scripts --access restricted",
