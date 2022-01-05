@@ -16,33 +16,13 @@ Protocols supported:
 - Uniswap V1
 - Uniswap V2
 - Uniswap V3
+- Yearn
 
 # Installation
 
-To install it in your project, simply run `yarn add @composable-finance/sdk-defi-protocols` (or `npm install @composable-finance/sdk-defi-protocols`).
+To install it in your project, simply run `yarn add @composable-finance/v1-sdk-defi-protocols` (or `npm install @composable-finance/v1-sdk-defi-protocols`).
 
 
-# Javascript/Typescript
+# Documentation
 
-```typescript
-import { protocols } from "@composable-finance/sdk-defi-protocols";
-
-//retrieve LendingPoolAddressProvider abi
-protocols.aave.mainnet.LendingPoolAddressProvider.abi
-
-// or LendingPoolAddressProvider mainnet address
-protocols.aave.mainnet.LendingPoolAddressProvider.address
-```
-
-# Solidity
-
-```solidity
-import "@composable-finance/sdk-defi-protocols/contracts/ICompoundPriceOracle.sol";
-
-
-contract DemoContract {	
-    function getPrice(address contractAddress, address tokenAddress) external view returns (uint256) {		
-        return ICompoundPriceOracle(contractAddress).getUnderlyingPrice(tokenAddress);
-    }
-}
-```
+Documentation is covered on [our SDK docs page](https://sdk-docs.composable.finance/sdk/protocols/overview-protocols).

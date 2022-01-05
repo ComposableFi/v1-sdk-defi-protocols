@@ -16,6 +16,7 @@ Protocols supported:
 - Uniswap V1
 - Uniswap V2
 - Uniswap V3
+- Yearn
 
 # Installation
 
